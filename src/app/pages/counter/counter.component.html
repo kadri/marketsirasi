@@ -1,6 +1,9 @@
 <mat-card class="m-24">
-    <mat-card-header>
+    <mat-card-header fxLayout="row" fxLayoutAlign="space-between center">
         <mat-card-title>Market Sırası</mat-card-title>
+        <button mat-icon-button routerLink="settings">
+            <mat-icon>settings</mat-icon>
+          </button>
     </mat-card-header>
     <mat-card-content *ngIf="getSpinner(); let status" class="card-content" fxLayout="column" fxLayoutAlign="center center">
         <mat-progress-spinner [value]="status.value" [color]="status.color">

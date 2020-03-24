@@ -14,6 +14,12 @@ export class CounterComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
+    if(localStorage.getItem('max')){
+      this.maxValue = parseInt(localStorage.getItem('max'));
+    }
+    if(localStorage.getItem('val')){
+      this.value = parseInt(localStorage.getItem('val'));
+    }
   }
 
   getSpinner() {
@@ -29,6 +35,7 @@ export class CounterComponent implements OnInit {
 
   add() {
     this.value++;
+    localStorage.setItem('val', '' + this.value);
   }
 
   remove() {
@@ -36,6 +43,7 @@ export class CounterComponent implements OnInit {
     if (this.value < 0) {
       this.value = 0;
     }
+    localStorage.setItem('val', '' + this.value);
   }
 
 }
