@@ -5,8 +5,6 @@ Bu sebeple her 10m2'ye bir kişi düşecek şekilde marketler içeriye müşteri
 
 Bu uygulama ile market içerisindeki yoğunluğu yönetebilirsiniz.
 
-Demo : http://market.vidarti.com/
-
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 9.0.7.
 
